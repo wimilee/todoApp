@@ -1,16 +1,47 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <main>
+    <div class="container">
+      <h1>这是你的待办事项喔</h1>
+      <div class="input-add">
+        <input type="text" name="todo"/>
+        <button>
+          <i class="plus"></i>
+        </button>
+      </div>
+      <div class="filters">
+        <span class="filter active">全部</span>
+        <span class="filter">已完成</span>
+        <span class="filter">未完成</span>
+      </div>
+      <div class="todo-list">
+        <div class="todo-item">
+          <label>
+            <input type="checkbox">
+            Todo 1
+            <span class="check-button"></span>
+          </label>
+          <label>
+            <input type="checkbox">
+            Todo 2
+            <span class="check-button"></span>
+          </label>
+          <label>
+            <input type="checkbox">
+            Todo 3
+            <span class="check-button"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  
 }
 </script>
 
